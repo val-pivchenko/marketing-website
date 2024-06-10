@@ -9,11 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        className={`flex flex-row justify-between px-4 pt-8 ${
-          isOpen ? "bg-white" : ""
-        }`}
-      >
+      <div className={`flex flex-row justify-between px-4 pt-8`}>
         <img src="abstractly.png" alt="logo" className="w-32" />
         <button
           onClick={handleClick}
@@ -39,7 +35,7 @@ const Navbar = () => {
       <ul
         className={
           isOpen
-            ? "flex flex-col bg-white pt-6 px-4 w-full h-full max-h-screen transition ease-in-out delay-50"
+            ? "absolute top-18 pt-6 px-4 w-full transition ease-in-out delay-50"
             : "translate-x-1 hidden"
         }
       >
